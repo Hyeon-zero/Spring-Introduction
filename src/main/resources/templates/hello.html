@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--Thymeleaf 문법을 쓸 수 있게 선언-->
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<p th:text="'안녕하세요. ' + ${data}">안녕하세요. 손님</p> <!-- ${data}는 Thymeleaf 템플릿 엔진에서 사용되는 표현식 -->
+<!--th는 Thymeleaf Engine
+    템플릿 엔진으로 실행되면 "안녕하세요. 손님" >>> "'안녕하세요. ' + ${data}" 으로 치환된다.
+-->
+</body>
+</html>
